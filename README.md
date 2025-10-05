@@ -18,7 +18,6 @@ This repo hosts content for three courses I took at UiA. Each folder contains la
 There was also a fourth course with its own dedicated repository:
 
 - **Programming and Software Development** → 👉 [Link to the separate repository](https://github.com/ZattiAndrea/Sloot_Zatti_MAS417)
-  - _Replace the URL above with your actual repo link._
 
 ---
 
