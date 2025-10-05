@@ -24,41 +24,32 @@ There was also a fourth course with its own dedicated repository:
 ## Courses
 
 ### 1) AI-Mathematics
-A collection of worked notes and mini-reports that connect core math to practical ML.
-- Survey and hands-on comparisons of **Gradient Descent variants** (SGD, Mini-Batch, Momentum, RMSProp, Adam) with discussion of convergence, robustness, and scalability. :contentReference[oaicite:0]{index=0}
-- Applied **convex optimization** case study: proactive thermal/frequency control for MPSoCs (“Pro-Temp”) with constraints and objective formulation, plus takeaways from the experimental results. :contentReference[oaicite:1]{index=1}
-- **Missing data** strategies in longitudinal studies: MCAR/MAR/MNAR, with **Expectation-Maximization** and **Multiple Imputation** as preferred methods. :contentReference[oaicite:2]{index=2}
-- **Linear algebra refreshers**: eigenvalues/eigenvectors proofs with worked examples. :contentReference[oaicite:3]{index=3}
+This course builds the mathematical toolbox needed to model, analyze, and optimize modern ML systems. You’ll connect probability (random variables, conditional rules), linear algebra, and numerical optimization to core ML tasks such as maximum-likelihood estimation, regression, classification evaluation, and dimensionality reduction. The module also introduces game-theoretic reasoning, dynamical systems (deterministic and stochastic state-space models), and Markov chains, so you can formulate time-dependent problems and reason about their evolution in practice.
+
+**What I did:** Each week the professor assigned exercises aligned with the lecture topics—some purely mathematical (pen-and-paper), others coding-oriented—plus short reading-based reports on selected papers. In this repo you’ll find the code for every assignment and one final report that consolidates the work completed across the semester.
 
 📂 See: [`/AI-Mathematics`](./AI-Mathematics)
 
 ---
 
 ### 2) Deep Neural Network
-Assignments spanning classical ML, modern deep learning, and a final project.
-- Implemented **KNN from scratch** on the Pima Indians Diabetes dataset, including scaling, tie-handling discussion, and **k** selection via multiple metrics. :contentReference[oaicite:4]{index=4}
-- Built a custom **MLP** (and PyTorch version) for E. coli class classification; ~**100% accuracy** with Sigmoid activations and momentum. :contentReference[oaicite:5]{index=5}
-- **CNN image classification** on Food-11; baseline vs. transfer learning:
-  - **ResNet18** with augmentation reached ~**83% test accuracy**; VGG16 and a small custom CNN (“FoodNet”) lagged (~15%). Early stopping implemented. :contentReference[oaicite:6]{index=6}
-- **Object detection & instance segmentation** with **Faster R-CNN/Mask R-CNN** on the Balloon dataset; reported **precision 0.82**, **recall 0.86**, **F1 0.81**. :contentReference[oaicite:7]{index=7}
-- **RNN/LSTM** tag classifier on Stack Overflow Q&A (top-40 tags), including heavy class imbalance; achieved **accuracy 0.57**, **precision 0.82**, **recall 0.72**, **F1 0.74**. :contentReference[oaicite:8]{index=8}
-- **Denoising task**: remove synthetic “date-stamp” noise using an **Autoencoder**, a **GAN** (generator/discriminator design), and a **Diffusion** approach; includes data pipeline and qualitative comparisons. :contentReference[oaicite:9]{index=9}
-- **Final project (audio)**: experiments with **Wav2Vec2.0** and a **CNN (EfficientNetV2)**; training setups and comparative evaluations are documented. :contentReference[oaicite:10]{index=10}
+The course aims to make you proficient at designing, training, and evaluating neural models end-to-end. Starting from the theoretical foundations of layers, activations, and optimizers, you progress to building feed-forward, convolutional, recurrent, autoencoder, and GAN architectures, learning when and why to use each. Emphasis is on practical proficiency—configuring pipelines, diagnosing under/overfitting and data issues, and delivering industry-relevant implementations with sound experimental analysis.
+
+**What I did:** After the initial theory block, we moved to a hands-on lab format with six weekly assignments, each tied to that week’s topic. The course concluded with a larger project; my team tackled **bird-voice (birdsong) recognition**, experimenting with newer models and approaches for the task and achieving excellent results.
 
 📂 See: [`/DeepNeuralNetwork`](./DeepNeuralNetwork)
 
 ---
 
 ### 3) Generative Programming
-A DSL project for **Petri Nets** using **JetBrains MPS**.
-- Language supports **places, transitions, tokens**, and arc connections; editor syntax for line-based modeling. :contentReference[oaicite:11]{index=11}
-- New features: **inline line comments** (with constraint override), **test suite fixes + new tests** for comment handling, and **documentation overhaul** (README/manual migrated to GitHub Issues workflow). :contentReference[oaicite:12]{index=12}
-- **External visualization export**: text generation to `.apt` for an online Petri-net tool; pipeline from model → file → rendered graph. :contentReference[oaicite:13]{index=13}
-- **Runtime attempt**: MPS plugin to “Run Petrinet”; core logic works but **initialization issues** prevent full execution—next steps and limitations are discussed. :contentReference[oaicite:14]{index=14}
+This course develops the skills to describe, analyze, and implement languages and their tooling. You learn model-driven development and the treatment of structural, syntactic, and semantic aspects to design high-level language descriptions, then turn those models into working artifacts through compiler techniques and code generation. By the end, you can translate between grammars, languages, and automata, and engineer generators and processors that raise the level of abstraction in software development.
+
+**What I did:** Although the course was mainly theoretical, the report in this repo summarizes my work on an existing project to extend and update features of a language for building **Petri nets**. You can find the official project repository here: [uiano/Petrinet](https://github.com/uiano/Petrinet).
 
 📂 See: [`/GenerativeProgramming`](./GenerativeProgramming)
 
 ---
+
 
 
 ## Academic Notes
